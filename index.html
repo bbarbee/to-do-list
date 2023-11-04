@@ -9,11 +9,11 @@
 <body>
 
     <div class="container">
-        <div class="toDoList">
+        <div class="to-doForm">
             <h1>To-Do List</h1>
                 <form action="">
                     <label for="task">Task:</label> <br>
-                    <input type="text" id="task">
+                    <input type="text" placeholder="Add your task" id="task">
                     <!--GET "TASK:" AND "PRIORITY LEVEL:"ON THE SAME PLANE ABOVE THE INPUT BOXES. MAYBE SPAN?-->
                     <label for="priority">Priority level:</label> 
                     <select name="priority" id="priority">
@@ -21,11 +21,21 @@
                         <option value="medium" style="color: orange;">Medium</option>
                         <option value="low" style="color: yellow;">Low</option>
                     </select>
+                    <!--BUTTON VS INPUT TYPE OF SUBMIT. I THINK I WANT A BUTTON SO I CAN ADD THE EVENT LISTENER-->
                     <input type="submit" value="+Add">
                 </form>
         </div>
+        <div id="listOfToDo">
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+            </ul>
+        </div>
+            
+        
+    
     </div>
-    <h2>My List</h2>
 </body>
 </html>
 <!-- Addtional things:
