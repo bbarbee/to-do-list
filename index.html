@@ -1,45 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>To-Do List</title>
-</head>
-<body>
-    
+  </head>
+  <body>
     <div class="container">
-        <div class="to-doForm">
-            <h1>To-Do List</h1>
-                <form action="" id="addToDo">
-                    <label for="task">To Do:</label> 
-                    <input type="text" placeholder="Type to-do here" id="userInput"> 
-                    <!--GET "TASK:" AND "PRIORITY LEVEL:"ON THE SAME PLANE ABOVE THE INPUT BOXES. MAYBE SPAN?-->
-<!--
-                    <label for="priority">Priority level:</label> <br>
-                    <select name="priority" id="priority">
-                        <option value="high" style="color: crimson;">High</option>
-                        <option value="medium" style="color: orange;">Medium</option>
-                        <option value="low" style="color: yellow;">Low</option>
-                    </select> <br>
--->
-                    <!--BUTTON VS INPUT TYPE OF SUBMIT. I THINK I WANT A BUTTON SO I CAN ADD THE EVENT LISTENER-->
-                    <button onclick="addTask()">+Add</button>
-                </form>
-            </div>
-
-    <div>
+      
+      <div class="to-doForm">
+        <h1>To-Do List</h1>
+        <input type="text" id="userInput" placeholder="Type to-do here" />
+        <button id="addButton">Add</button>
+      </div>
+      <div class="to-doList">
         <ul id="toDoList"></ul>
-        <ul id="userUpdatedToDoList"></ul>
-        
-    
+      </div>
     </div>
-    <script src="script2.js"></script>
-</body>
+
+    <script src="script.js"></script>
+  </body>
 </html>
-<!-- Addtional things:
-    -priorities for tasks
-    -due dates for tasks
-    -alerts
-    -calendar functions
-     -->

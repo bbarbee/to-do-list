@@ -3,6 +3,7 @@
   margin: 0; 
   padding: 0; 
   box-sizing: border-box;
+  
 }
 
 .container {
@@ -10,6 +11,7 @@
     min-height: 100vh;
     padding: 10px;
     background-image: linear-gradient(to bottom right, #4ca1af, #c4a0e5);
+    
 }
 
 .to-doForm {
@@ -21,18 +23,27 @@
     border-radius: 10px;
 }
 
-/* THIS IS NOT WORKING TO CENTER THE HEADER */
- .to-doForm{
-    align-items: center;
-    
+#toDoList{
+    width: 100%;
+    max-width: 100%;
+    background: rgb(251, 232, 235);
+    margin: 100px auto 20px;
+    padding: 40px 10px;
+    border-radius: 10px;
 }
 
-#listOfToDo {
-    list-style-type: none;
+#toDoList {
+    list-style-type: circle;
     font-weight: bolder;
     font-size: 15px;
     padding: 12px 8px 12px 50px;
+    cursor: pointer;
 }
+
+ul li:nth-child(odd) {
+    background: #c4a0e5;
+}
+
 
 
 
